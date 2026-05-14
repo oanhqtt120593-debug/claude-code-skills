@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow Pro — Quản lý công việc thông minh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+          colors: {
+            primary:   '#0D9488',
+            secondary: '#14B8A6',
+            cta:       '#F97316',
+            bg:        '#F0FDFA',
+            text:      '#134E4A',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .glass-dark {
+      background: rgba(13, 148, 136, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(20, 184, 166, 0.25);
+    }
+
+    .hero-bg {
+      background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(20,184,166,0.25) 0%, transparent 70%),
+                  radial-gradient(ellipse 60% 50% at 80% 60%, rgba(249,115,22,0.1) 0%, transparent 60%),
+                  #F0FDFA;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(60px);
+      opacity: 0.35;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-text bg-bg antialiased">
+
+  <!-- Navbar -->
+  <header class="fixed top-4 left-4 right-4 z-50">
+    <nav class="glass max-w-6xl mx-auto rounded-2xl px-6 py-3 flex items-center justify-between shadow-sm">
+      <a href="#" class="flex items-center gap-2 font-bold text-lg text-primary">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="8" height="8" rx="2" fill="#0D9488"/>
+          <rect x="13" y="3" width="8" height="8" rx="2" fill="#14B8A6" opacity=".7"/>
+          <rect x="3" y="13" width="8" height="8" rx="2" fill="#14B8A6" opacity=".7"/>
+          <rect x="13" y="13" width="8" height="8" rx="2" fill="#F97316"/>
+        </svg>
+        TaskFlow Pro
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-text/70">
+        <li><a href="#features" class="hover:text-primary transition-colors duration-200 cursor-pointer">Tính năng</a></li>
+        <li><a href="#testimonials" class="hover:text-primary transition-colors duration-200 cursor-pointer">Đánh giá</a></li>
+        <li><a href="#pricing" class="hover:text-primary transition-colors duration-200 cursor-pointer">Bảng giá</a></li>
+      </ul>
+
+      <a href="#pricing" class="cursor-pointer bg-cta hover:bg-orange-500 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cta focus:ring-offset-2">
+        Dùng miễn phí
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg relative overflow-hidden pt-36 pb-24 px-4 sm:px-6 lg:px-8">
+    <div class="blob w-96 h-96 bg-secondary top-10 -left-20" style="position:absolute"></div>
+    <div class="blob w-80 h-80 bg-cta bottom-0 right-0" style="position:absolute"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative">
+      <span class="inline-block glass text-primary text-xs font-semibold px-4 py-1.5 rounded-full mb-6 border border-primary/20">
+        Mới — Tích hợp AI thông minh
+      </span>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text leading-tight mb-6">
+        Quản lý công việc<br/>
+        <span class="text-primary">nhanh hơn 3 lần</span><br/>
+        với AI
+      </h1>
+
+      <p class="text-text/60 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        TaskFlow Pro giúp đội nhóm của bạn lên kế hoạch, theo dõi tiến độ và giao tiếp — tất cả trong một nền tảng. Không cần học phức tạp, chạy ngay trong 60 giây.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-14">
+        <a href="#pricing" class="cursor-pointer bg-cta hover:bg-orange-500 text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cta focus:ring-offset-2 shadow-lg shadow-orange-200">
+          Bắt đầu miễn phí
+        </a>
+        <a href="#features" class="cursor-pointer glass hover:bg-white/90 text-text font-semibold px-8 py-4 rounded-2xl text-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+          Xem tính năng
+        </a>
+      </div>
+
+      <!-- Social proof numbers -->
+      <div class="glass inline-flex gap-10 px-10 py-5 rounded-2xl shadow-sm">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-primary">12,000+</div>
+          <div class="text-sm text-text/60 mt-0.5">Người dùng</div>
+        </div>
+        <div class="w-px bg-gray-200"></div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-primary">98%</div>
+          <div class="text-sm text-text/60 mt-0.5">Hài lòng</div>
+        </div>
+        <div class="w-px bg-gray-200"></div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-primary">4.9 ★</div>
+          <div class="text-sm text-text/60 mt-0.5">Đánh giá</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-text mb-4">Mọi thứ bạn cần trong một nơi</h2>
+        <p class="text-text/60 text-lg max-w-xl mx-auto">Không cần dùng 5 app khác nhau. TaskFlow Pro hợp nhất tất cả.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Feature card -->
+        <div class="glass-dark p-8 rounded-3xl hover:shadow-lg hover:shadow-teal-100 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text mb-3">Kanban thông minh</h3>
+          <p class="text-text/60 leading-relaxed">AI tự động sắp xếp ưu tiên, phát hiện bottleneck và gợi ý phân công nhiệm vụ hợp lý nhất.</p>
+        </div>
+
+        <div class="glass-dark p-8 rounded-3xl hover:shadow-lg hover:shadow-teal-100 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text mb-3">Cộng tác thời gian thực</h3>
+          <p class="text-text/60 leading-relaxed">Xem đồng nghiệp đang làm gì, comment trực tiếp, @mention và nhận thông báo tức thì — không bỏ lỡ gì.</p>
+        </div>
+
+        <div class="glass-dark p-8 rounded-3xl hover:shadow-lg hover:shadow-teal-100 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text mb-3">Báo cáo tức thì</h3>
+          <p class="text-text/60 leading-relaxed">Dashboard tự động tổng hợp tiến độ, thời gian hoàn thành và hiệu suất cả nhóm — không cần xuất Excel.</p>
+        </div>
+
+        <div class="glass-dark p-8 rounded-3xl hover:shadow-lg hover:shadow-teal-100 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text mb-3">Tự động hóa quy trình</h3>
+          <p class="text-text/60 leading-relaxed">Tạo automation không cần code: "Khi task hoàn thành → thông báo Slack → chuyển sang giai đoạn tiếp".</p>
+        </div>
+
+        <div class="glass-dark p-8 rounded-3xl hover:shadow-lg hover:shadow-teal-100 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text mb-3">Bảo mật doanh nghiệp</h3>
+          <p class="text-text/60 leading-relaxed">SSO, 2FA, audit log, phân quyền theo role. Tuân thủ SOC 2 Type II và GDPR.</p>
+        </div>
+
+        <div class="glass-dark p-8 rounded-3xl hover:shadow-lg hover:shadow-teal-100 transition-all duration-200 cursor-pointer group">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-200">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text mb-3">300+ Tích hợp</h3>
+          <p class="text-text/60 leading-relaxed">Kết nối với Slack, GitHub, Figma, Google Drive, Jira và hơn 300 ứng dụng bạn đã dùng hàng ngày.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-24 px-4 sm:px-6 lg:px-8 hero-bg">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-text mb-4">Được hơn 12,000 đội nhóm tin dùng</h2>
+        <p class="text-text/60 text-lg">Từ startup 5 người đến doanh nghiệp 500+ nhân viên</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <figure class="glass p-8 rounded-3xl shadow-sm">
+          <blockquote class="text-text/70 leading-relaxed italic mb-6">
+            "Nhóm chúng tôi tiết kiệm được 8 tiếng mỗi tuần cho các cuộc họp status update. TaskFlow Pro làm tất cả tự động."
+          </blockquote>
+          <figcaption class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-lg" aria-hidden="true">N</div>
+            <div>
+              <div class="font-semibold text-text text-sm">Nguyễn Minh Tuấn</div>
+              <div class="text-text/50 text-xs">CTO, Teko Vietnam</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="glass p-8 rounded-3xl shadow-sm">
+          <blockquote class="text-text/70 leading-relaxed italic mb-6">
+            "Onboarding cực nhanh — team 20 người của tôi thành thạo trong 1 ngày. Giao diện đẹp và trực quan hơn Jira rất nhiều."
+          </blockquote>
+          <figcaption class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-lg" aria-hidden="true">P</div>
+            <div>
+              <div class="font-semibold text-text text-sm">Phạm Thu Hằng</div>
+              <div class="text-text/50 text-xs">Product Manager, VNG</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="glass p-8 rounded-3xl shadow-sm">
+          <blockquote class="text-text/70 leading-relaxed italic mb-6">
+            "Tính năng AI phân tích bottleneck đã giúp chúng tôi tăng tốc độ delivery lên 40% chỉ sau 2 tháng dùng."
+          </blockquote>
+          <figcaption class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full bg-cta/20 flex items-center justify-center text-cta font-bold text-lg" aria-hidden="true">L</div>
+            <div>
+              <div class="font-semibold text-text text-sm">Lê Hoàng Nam</div>
+              <div class="text-text/50 text-xs">Engineering Lead, MoMo</div>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-text mb-4">Giá minh bạch, không ẩn phí</h2>
+        <p class="text-text/60 text-lg">Bắt đầu miễn phí, nâng cấp khi cần. Hủy bất cứ lúc nào.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+
+        <!-- Free -->
+        <div class="glass-dark p-8 rounded-3xl">
+          <div class="text-sm font-semibold text-primary uppercase tracking-wide mb-4">Miễn phí</div>
+          <div class="flex items-end gap-1 mb-2">
+            <span class="text-4xl font-extrabold text-text">0₫</span>
+            <span class="text-text/50 mb-1">/tháng</span>
+          </div>
+          <p class="text-text/50 text-sm mb-8">Phù hợp cá nhân và nhóm nhỏ</p>
+          <ul class="space-y-3 mb-8" role="list">
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              5 thành viên
+            </li>
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              3 dự án
+            </li>
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Kanban cơ bản
+            </li>
+            <li class="flex items-center gap-3 text-sm text-text/50">
+              <svg class="w-5 h-5 text-gray-300 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              AI không có
+            </li>
+          </ul>
+          <a href="#" class="cursor-pointer block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-3 rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+            Đăng ký miễn phí
+          </a>
+        </div>
+
+        <!-- Pro (Highlighted) -->
+        <div class="bg-primary p-8 rounded-3xl shadow-xl shadow-teal-200 relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-cta text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
+            PHỔ BIẾN NHẤT
+          </div>
+          <div class="text-sm font-semibold text-teal-200 uppercase tracking-wide mb-4">Pro</div>
+          <div class="flex items-end gap-1 mb-2">
+            <span class="text-4xl font-extrabold text-white">299k</span>
+            <span class="text-teal-200 mb-1">/tháng</span>
+          </div>
+          <p class="text-teal-200 text-sm mb-8">Phù hợp đội nhóm đang tăng trưởng</p>
+          <ul class="space-y-3 mb-8" role="list">
+            <li class="flex items-center gap-3 text-sm text-white/90">
+              <svg class="w-5 h-5 text-teal-200 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Không giới hạn thành viên
+            </li>
+            <li class="flex items-center gap-3 text-sm text-white/90">
+              <svg class="w-5 h-5 text-teal-200 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Dự án không giới hạn
+            </li>
+            <li class="flex items-center gap-3 text-sm text-white/90">
+              <svg class="w-5 h-5 text-teal-200 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              AI thông minh đầy đủ
+            </li>
+            <li class="flex items-center gap-3 text-sm text-white/90">
+              <svg class="w-5 h-5 text-teal-200 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Tự động hóa 50 rules
+            </li>
+          </ul>
+          <a href="#" class="cursor-pointer block text-center bg-cta hover:bg-orange-500 text-white font-semibold py-3 rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-primary shadow-md">
+            Dùng thử 14 ngày miễn phí
+          </a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="glass-dark p-8 rounded-3xl">
+          <div class="text-sm font-semibold text-primary uppercase tracking-wide mb-4">Enterprise</div>
+          <div class="flex items-end gap-1 mb-2">
+            <span class="text-4xl font-extrabold text-text">Liên hệ</span>
+          </div>
+          <p class="text-text/50 text-sm mb-8">Cho doanh nghiệp 100+ nhân viên</p>
+          <ul class="space-y-3 mb-8" role="list">
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Tất cả tính năng Pro
+            </li>
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              SSO & SAML
+            </li>
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              SLA 99.9% uptime
+            </li>
+            <li class="flex items-center gap-3 text-sm text-text/70">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Hỗ trợ 24/7 dedicated
+            </li>
+          </ul>
+          <a href="#" class="cursor-pointer block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-3 rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+            Liên hệ sales
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-primary relative overflow-hidden">
+    <div class="blob w-96 h-96 bg-secondary opacity-20 -top-20 -left-20" style="position:absolute"></div>
+    <div class="blob w-80 h-80 bg-white opacity-10 bottom-0 right-0" style="position:absolute"></div>
+    <div class="max-w-2xl mx-auto text-center relative">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Sẵn sàng tăng tốc nhóm của bạn?</h2>
+      <p class="text-teal-100 text-lg mb-10">Tham gia cùng 12,000+ đội nhóm đã dùng TaskFlow Pro. Không cần thẻ tín dụng.</p>
+      <a href="#" class="cursor-pointer inline-block bg-cta hover:bg-orange-500 text-white font-bold px-10 py-4 rounded-2xl text-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-primary shadow-xl shadow-orange-900/30">
+        Bắt đầu miễn phí ngay hôm nay
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-text/40">
+      <span class="font-semibold text-primary">TaskFlow Pro</span>
+      <span>© 2025 TaskFlow Pro. All rights reserved.</span>
+      <nav class="flex gap-6" aria-label="Footer navigation">
+        <a href="#" class="hover:text-primary transition-colors duration-200 cursor-pointer">Privacy</a>
+        <a href="#" class="hover:text-primary transition-colors duration-200 cursor-pointer">Terms</a>
+        <a href="#" class="hover:text-primary transition-colors duration-200 cursor-pointer">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

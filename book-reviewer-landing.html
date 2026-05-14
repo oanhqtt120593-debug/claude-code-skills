@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookReview AI — Review Sách AI Nhanh, Chính Xác</title>
+  <meta name="description" content="Review sách bằng AI trong vài giây: 5 phong cách, 3 ngôn ngữ, tóm tắt chuyên sâu. Thử miễn phí BookReview AI ngay hôm nay!" />
+  <link rel="canonical" href="https://bookreview.ai/" />
+
+  <!-- Meta SEO -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="BookReview AI" />
+  <meta name="keywords" content="review sách AI, review sách bằng AI, đánh giá sách tự động, AI book reviewer, tóm tắt sách AI, phân tích sách trí tuệ nhân tạo" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bookreview.ai/" />
+  <meta property="og:title" content="BookReview AI — Review Sách Thông Minh Bằng Trí Tuệ Nhân Tạo" />
+  <meta property="og:description" content="Nhận review sách chuyên sâu theo 5 phong cách và 3 ngôn ngữ chỉ trong vài giây. AI book reviewer hàng đầu cho độc giả Việt Nam." />
+  <meta property="og:image" content="https://bookreview.ai/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="BookReview AI - Công cụ review sách bằng AI" />
+  <meta property="og:site_name" content="BookReview AI" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@BookReviewAI" />
+  <meta name="twitter:creator" content="@BookReviewAI" />
+  <meta name="twitter:title" content="BookReview AI — Review Sách Thông Minh Bằng AI" />
+  <meta name="twitter:description" content="Review sách bằng AI: 5 phong cách, 3 ngôn ngữ, kết quả trong vài giây. Miễn phí cho 5 review đầu tiên." />
+  <meta name="twitter:image" content="https://bookreview.ai/og-image.png" />
+  <meta name="twitter:image:alt" content="BookReview AI - Đánh giá sách tự động bằng trí tuệ nhân tạo" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://bookreview.ai/#webapp",
+        "name": "BookReview AI",
+        "url": "https://bookreview.ai/",
+        "description": "Công cụ review sách bằng AI hàng đầu tại Việt Nam. Đánh giá sách tự động theo 5 phong cách (Học thuật, Phê bình, Casual, Business, Motivational) và 3 ngôn ngữ (Tiếng Việt, English, 日本語) chỉ trong vài giây.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": ["vi", "en", "ja"],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Miễn phí",
+            "price": "0",
+            "priceCurrency": "VND",
+            "description": "5 review mỗi tháng, 3 phong cách cơ bản, Tiếng Việt & English"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "99000",
+            "priceCurrency": "VND",
+            "billingIncrement": "P1M",
+            "description": "Review không giới hạn, 5 phong cách, 3 ngôn ngữ, upload PDF, lưu & chia sẻ"
+          },
+          {
+            "@type": "Offer",
+            "name": "Team",
+            "price": "299000",
+            "priceCurrency": "VND",
+            "billingIncrement": "P1M",
+            "description": "Tất cả tính năng Pro, tối đa 10 thành viên, workspace chung, analytics"
+          }
+        ],
+        "featureList": [
+          "Review sách bằng AI theo 5 phong cách: Học thuật, Phê bình, Casual, Business, Motivational",
+          "Hỗ trợ 3 ngôn ngữ: Tiếng Việt, English, Tiếng Nhật",
+          "Tạo review trong vài giây",
+          "Upload PDF lên đến 50MB",
+          "Trích xuất key insights và quotes",
+          "Đánh giá điểm mạnh và điểm yếu sách",
+          "Lưu và chia sẻ review",
+          "Export sang PDF và Word"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "12000",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://bookreview.ai/#organization",
+        "name": "BookReview AI",
+        "url": "https://bookreview.ai/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bookreview.ai/logo.png",
+          "width": 200,
+          "height": 60
+        },
+        "description": "Công ty phát triển công cụ review sách bằng trí tuệ nhân tạo (AI book reviewer) hàng đầu tại Việt Nam.",
+        "foundingLocation": {
+          "@type": "Place",
+          "addressCountry": "VN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@bookreview.ai",
+          "availableLanguage": ["Vietnamese", "English"]
+        },
+        "sameAs": [
+          "https://facebook.com/BookReviewAI",
+          "https://twitter.com/BookReviewAI",
+          "https://linkedin.com/company/bookreview-ai"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bookreview.ai/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "BookReview AI hoạt động như thế nào?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BookReview AI sử dụng mô hình ngôn ngữ lớn (LLM) được huấn luyện đặc biệt để phân tích nội dung sách. Khi bạn nhập tên sách, hệ thống tra cứu cơ sở dữ liệu sách đồng thời kết hợp khả năng lý luận của AI để tạo ra bản review phù hợp với phong cách và ngôn ngữ bạn chọn. Toàn bộ quá trình diễn ra trong vài giây."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Review sách bằng AI có chính xác không? AI có thể bịa nội dung không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BookReview AI kết hợp dữ liệu có kiểm chứng từ cơ sở dữ liệu sách với khả năng diễn giải của AI. Đối với các sách phổ biến, độ chính xác rất cao. Hệ thống luôn hiển thị cảnh báo rõ ràng khi sách có ít thông tin và khuyến nghị người dùng kiểm tra lại với bản gốc. Tính năng upload PDF giúp đảm bảo độ chính xác 100% cho nội dung cụ thể."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Tôi có thể upload PDF sách để đánh giá sách tự động không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Có! Gói Pro và Team hỗ trợ upload file PDF lên đến 50MB. Bạn có thể upload sách, tài liệu nghiên cứu, luận văn hoặc bất kỳ văn bản nào. Dữ liệu của bạn được mã hóa và không được dùng để huấn luyện AI. File sẽ tự động xóa sau 30 ngày nếu bạn không dùng nữa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Làm sao để hủy gói đăng ký BookReview AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bạn có thể hủy bất cứ lúc nào từ trang Cài đặt tài khoản mà không cần liên hệ support. Sau khi hủy, bạn vẫn sử dụng được đến hết chu kỳ thanh toán hiện tại. BookReview AI có chính sách hoàn tiền 100% trong 14 ngày đầu nếu bạn không hài lòng — không cần giải thích."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://bookreview.ai/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://bookreview.ai/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50:  '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7C3AED',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            },
+            accent: {
+              50:  '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#F59E0B',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            stone: {
+              50:  '#FAFAF9',
+              900: '#1C1917',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ─── Base ─── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #FAFAF9;
+      color: #1C1917;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Typography ─── */
+    .font-serif  { font-family: 'Playfair Display', Georgia, serif; }
+
+    /* ─── Gradient backgrounds ─── */
+    .hero-gradient {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 40%, #fef3c7 100%);
+    }
+    .purple-gradient {
+      background: linear-gradient(135deg, #7C3AED 0%, #5b21b6 100%);
+    }
+    .card-gradient {
+      background: linear-gradient(145deg, #ffffff 0%, #f5f3ff 100%);
+    }
+
+    /* ─── Glassmorphism card ─── */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(124, 58, 237, 0.12);
+    }
+
+    /* ─── Scroll-reveal animation ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1),
+                  transform 0.65s cubic-bezier(0.4,0,0.2,1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+    .reveal-delay-1 { transition-delay: 0.10s; }
+    .reveal-delay-2 { transition-delay: 0.20s; }
+    .reveal-delay-3 { transition-delay: 0.30s; }
+    .reveal-delay-4 { transition-delay: 0.40s; }
+
+    /* ─── Navbar scroll shadow ─── */
+    #navbar {
+      transition: box-shadow 0.3s, background 0.3s;
+    }
+    #navbar.scrolled {
+      background: rgba(250, 250, 249, 0.97) !important;
+      box-shadow: 0 2px 24px rgba(124, 58, 237, 0.10);
+    }
+
+    /* ─── Buttons ─── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #7C3AED, #6d28d9);
+      color: #fff;
+      font-weight: 600;
+      padding: 0.75rem 1.75rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+      box-shadow: 0 4px 18px rgba(124,58,237,0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(124,58,237,0.45);
+    }
+    .btn-primary:active { transform: translateY(0); }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid #7C3AED;
+      color: #7C3AED;
+      font-weight: 600;
+      padding: 0.70rem 1.65rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-outline:hover {
+      background: #7C3AED;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #fff;
+      color: #7C3AED;
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* ─── Book illustration (CSS-only) ─── */
+    .book-wrap {
+      position: relative;
+      width: 220px;
+      height: 280px;
+      margin: 0 auto;
+      filter: drop-shadow(0 24px 48px rgba(124,58,237,0.28));
+    }
+    .book-body {
+      position: absolute;
+      right: 0;
+      width: 180px;
+      height: 280px;
+      background: linear-gradient(135deg, #7C3AED 0%, #5b21b6 100%);
+      border-radius: 4px 12px 12px 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .book-spine {
+      position: absolute;
+      left: 0;
+      width: 44px;
+      height: 280px;
+      background: linear-gradient(135deg, #4c1d95 0%, #3b0764 100%);
+      border-radius: 4px 0 0 4px;
+    }
+    .book-spine::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0,0,0,0.15), transparent);
+    }
+    .book-title-text {
+      color: #fef3c7;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+    .book-star {
+      color: #F59E0B;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+    }
+    .book-lines {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .book-line {
+      height: 3px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 99px;
+      margin-bottom: 6px;
+    }
+    .book-line:nth-child(1) { width: 100%; }
+    .book-line:nth-child(2) { width: 80%; }
+    .book-line:nth-child(3) { width: 90%; }
+    .book-line:nth-child(4) { width: 70%; }
+    .book-line:nth-child(5) { width: 85%; }
+
+    /* floating badges around book */
+    .float-badge {
+      position: absolute;
+      background: #fff;
+      border-radius: 12px;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(124,58,237,0.18);
+      white-space: nowrap;
+      animation: floatY 3s ease-in-out infinite;
+    }
+    .float-badge:nth-child(1) { top: -14px;  right: -60px; color: #7C3AED; animation-delay: 0s; }
+    .float-badge:nth-child(2) { bottom: 40px; left: -70px; color: #d97706; animation-delay: 1s; }
+    .float-badge:nth-child(3) { bottom: -14px; right: -40px; color: #059669; animation-delay: 2s; }
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-8px); }
+    }
+
+    /* ─── Feature icon circle ─── */
+    .icon-circle {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    /* ─── Step connector line ─── */
+    .step-line {
+      position: absolute;
+      top: 28px;
+      left: calc(50% + 28px);
+      width: calc(100% - 56px);
+      height: 2px;
+      background: linear-gradient(to right, #c4b5fd, #fde68a);
+    }
+
+    /* ─── Testimonial stars ─── */
+    .stars { color: #F59E0B; letter-spacing: 1px; }
+
+    /* ─── Pricing highlight ─── */
+    .pricing-popular {
+      position: relative;
+      border: 2px solid #7C3AED;
+      transform: scale(1.04);
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #7C3AED, #F59E0B);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 16px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+
+    /* ─── FAQ accordion ─── */
+    .faq-item details summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #1C1917;
+    }
+    .faq-item details summary::-webkit-details-marker { display: none; }
+    .faq-item details summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: #7C3AED;
+      font-weight: 400;
+      flex-shrink: 0;
+      transition: transform 0.25s;
+    }
+    .faq-item details[open] summary::after {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      padding: 0 1.5rem 1.25rem;
+      color: #57534e;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    /* ─── Section divider ornament ─── */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .ornament::before, .ornament::after {
+      content: '';
+      width: 40px; height: 1px;
+      background: linear-gradient(to right, transparent, #c4b5fd);
+    }
+    .ornament::after { background: linear-gradient(to left, transparent, #c4b5fd); }
+
+    /* ─── Tag chips ─── */
+    .chip {
+      display: inline-block;
+      padding: 0.3rem 0.85rem;
+      border-radius: 99px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ─── Responsive nav mobile ─── */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+
+    /* ─── Pulse dot (live indicator) ─── */
+    .pulse-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+      50%       { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50">
+
+  <!-- GEO: Machine-readable summary for AI search engines -->
+  <div id="ai-summary" aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
+    <h1>BookReview AI — Công cụ review sách bằng AI hàng đầu Việt Nam</h1>
+    <p>BookReview AI là ứng dụng web cho phép đánh giá sách tự động bằng trí tuệ nhân tạo. Người dùng nhập tên sách hoặc upload PDF, chọn 1 trong 5 phong cách review (Học thuật, Phê bình, Casual, Business, Motivational) và 3 ngôn ngữ (Tiếng Việt, English, Tiếng Nhật), sau đó nhận kết quả trong vài giây.</p>
+    <p>Tính năng chính của AI book reviewer này: tóm tắt key insights, trích dẫn quotes hay nhất, đánh giá điểm mạnh và điểm yếu, gợi ý bài học ứng dụng. Hơn 12.000 người dùng, 50.000+ sách đã được review sách bằng AI, điểm đánh giá trung bình 4.9/5.</p>
+    <p>Giá: Miễn phí (5 review/tháng) — Pro 99.000₫/tháng (không giới hạn) — Team 299.000₫/tháng (10 thành viên). Hoàn tiền 100% trong 14 ngày.</p>
+  </div>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-stone-50/90 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 font-serif font-bold text-xl text-primary-700 tracking-tight">
+          <span class="w-8 h-8 rounded-lg purple-gradient flex items-center justify-center text-white text-sm font-bold">B</span>
+          BookReview<span class="text-accent-500">AI</span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-700">
+          <li><a href="#features" class="hover:text-primary-600 transition-colors">Tính năng</a></li>
+          <li><a href="#how-it-works" class="hover:text-primary-600 transition-colors">Cách dùng</a></li>
+          <li><a href="#pricing" class="hover:text-primary-600 transition-colors">Bảng giá</a></li>
+          <li><a href="#faq" class="hover:text-primary-600 transition-colors">FAQ</a></li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#pricing" class="text-sm font-medium text-stone-600 hover:text-primary-600 transition-colors">Đăng nhập</a>
+          <a href="#pricing" class="btn-primary text-sm py-2 px-5">Thử miễn phí</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button id="hamburger" aria-label="Menu" class="md:hidden p-2 rounded-lg hover:bg-primary-50 text-stone-700">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden flex-col gap-1 pb-4 border-t border-primary-100 pt-3">
+        <a href="#features"     class="block px-4 py-2.5 rounded-lg text-stone-700 hover:bg-primary-50 font-medium text-sm">Tính năng</a>
+        <a href="#how-it-works" class="block px-4 py-2.5 rounded-lg text-stone-700 hover:bg-primary-50 font-medium text-sm">Cách dùng</a>
+        <a href="#pricing"      class="block px-4 py-2.5 rounded-lg text-stone-700 hover:bg-primary-50 font-medium text-sm">Bảng giá</a>
+        <a href="#faq"          class="block px-4 py-2.5 rounded-lg text-stone-700 hover:bg-primary-50 font-medium text-sm">FAQ</a>
+        <div class="px-4 pt-2">
+          <a href="#pricing" class="btn-primary w-full justify-center text-sm">Thử miễn phí</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero" class="hero-gradient pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+
+        <!-- Left: Copy -->
+        <div class="flex-1 text-center md:text-left">
+
+          <!-- Live badge -->
+          <div class="inline-flex items-center gap-2 bg-white/80 rounded-full px-4 py-1.5 text-sm font-medium text-primary-700 shadow-sm mb-6 reveal">
+            <span class="pulse-dot"></span>
+            AI review sách trong vài giây
+          </div>
+
+          <h1 class="font-serif font-black text-4xl sm:text-5xl md:text-6xl leading-tight text-stone-900 mb-5 reveal reveal-delay-1">
+            Review Sách AI —<br/>
+            <span class="text-primary-600">Thông Minh Hơn</span><br/>
+            Mỗi Ngày
+          </h1>
+
+          <p class="text-lg sm:text-xl text-stone-600 max-w-lg mx-auto md:mx-0 leading-relaxed mb-8 reveal reveal-delay-2">
+            BookReview AI giúp bạn <strong class="text-stone-800">review sách bằng AI</strong> — phân tích bất kỳ cuốn sách nào và tạo đánh giá sách tự động theo
+            <strong class="text-primary-600">5 phong cách</strong> khác nhau,
+            bằng <strong class="text-primary-700">3 ngôn ngữ</strong> — chỉ trong vài giây.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start reveal reveal-delay-3">
+            <a href="#pricing" class="btn-primary text-base">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Bắt đầu miễn phí
+            </a>
+            <a href="#how-it-works" class="btn-outline text-base">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              Xem demo
+            </a>
+          </div>
+
+          <!-- Stats row -->
+          <div class="flex gap-8 justify-center md:justify-start mt-10 reveal reveal-delay-4">
+            <div>
+              <div class="font-serif font-bold text-2xl text-stone-900">12,000+</div>
+              <div class="text-xs text-stone-500 font-medium mt-0.5">Người dùng</div>
+            </div>
+            <div class="w-px bg-primary-200"></div>
+            <div>
+              <div class="font-serif font-bold text-2xl text-stone-900">50,000+</div>
+              <div class="text-xs text-stone-500 font-medium mt-0.5">Sách đã review</div>
+            </div>
+            <div class="w-px bg-primary-200"></div>
+            <div>
+              <div class="font-serif font-bold text-2xl text-stone-900">4.9 ★</div>
+              <div class="text-xs text-stone-500 font-medium mt-0.5">Đánh giá TB</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Book illustration -->
+        <div class="flex-shrink-0 reveal reveal-delay-2">
+          <div style="position:relative; width:280px; height:320px; margin:0 auto;">
+            <!-- Main book -->
+            <div class="book-wrap" style="width:220px; height:280px; position:absolute; top:20px; left:30px;">
+              <div class="book-spine"></div>
+              <div class="book-body">
+                <div class="book-title-text">Atomic Habits<br/><span style="font-size:0.8rem; opacity:0.8;">James Clear</span></div>
+                <div class="book-star">★★★★★</div>
+                <div class="book-lines">
+                  <div class="book-line"></div>
+                  <div class="book-line"></div>
+                  <div class="book-line"></div>
+                  <div class="book-line"></div>
+                  <div class="book-line"></div>
+                </div>
+              </div>
+              <!-- Floating badges -->
+              <div class="float-badge" style="top:-14px; right:-68px;">
+                <span style="margin-right:4px;">🎯</span> 5 phong cách
+              </div>
+              <div class="float-badge" style="bottom:50px; left:-80px;">
+                <span style="margin-right:4px;">🌐</span> 3 ngôn ngữ
+              </div>
+              <div class="float-badge" style="bottom:-16px; right:-56px; color:#059669;">
+                <span style="margin-right:4px;">⚡</span> Ngay lập tức
+              </div>
+            </div>
+
+            <!-- Shadow book behind -->
+            <div style="position:absolute; top:0; left:0; width:180px; height:260px; background:linear-gradient(135deg,#c4b5fd,#a78bfa); border-radius:4px 12px 12px 4px; opacity:0.4; transform:rotate(-5deg);"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       TRUSTED BY LOGOS (decorative)
+  ══════════════════════════════ -->
+  <section class="py-10 bg-white border-y border-primary-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-6">Được tin dùng bởi độc giả tại</p>
+      <div class="flex flex-wrap items-center justify-center gap-8 opacity-50">
+        <!-- Text-based logos for no-image approach -->
+        <span class="font-serif font-bold text-lg text-stone-500">Tiki</span>
+        <span class="font-serif font-bold text-lg text-stone-500">Fahasa</span>
+        <span class="font-serif font-bold text-lg text-stone-500">Alphabooks</span>
+        <span class="font-serif font-bold text-lg text-stone-500">Bookbee</span>
+        <span class="font-serif font-bold text-lg text-stone-500">Waka</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       FEATURES
+  ══════════════════════════════ -->
+  <section id="features" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <!-- Section header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <div class="ornament"><span class="text-primary-400 text-sm font-medium tracking-widest uppercase">Tính năng</span></div>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl md:text-5xl text-stone-900 mb-4">
+          Mọi thứ bạn cần để<br/>
+          <span class="text-primary-600">hiểu sâu hơn</span>
+        </h2>
+        <p class="text-stone-500 text-lg leading-relaxed">
+          Từ review học thuật đến phân tích kinh doanh — <abbr title="AI book reviewer">BookReview AI</abbr> cung cấp góc nhìn đa chiều cho mỗi cuốn sách. Công cụ đánh giá sách tự động mạnh nhất cho độc giả Việt Nam.
+        </p>
+      </div>
+
+      <!-- Feature cards -->
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+
+        <!-- Feature 1: 5 Styles -->
+        <article class="card-gradient rounded-2xl p-7 shadow-sm border border-primary-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+          <div class="icon-circle bg-primary-100 mb-5">
+            <span class="text-2xl">🎭</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">5 Phong Cách Review</h3>
+          <p class="text-stone-500 text-sm leading-relaxed mb-5">
+            Chọn phong cách phù hợp với mục đích của bạn — từ nghiên cứu học thuật đến đọc giải trí.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip bg-primary-100 text-primary-700">🎓 Học thuật</span>
+            <span class="chip bg-amber-100 text-amber-700">🔍 Phê bình</span>
+            <span class="chip bg-green-100 text-green-700">😊 Casual</span>
+            <span class="chip bg-blue-100 text-blue-700">💼 Business</span>
+            <span class="chip bg-pink-100 text-pink-700">🔥 Motivational</span>
+          </div>
+        </article>
+
+        <!-- Feature 2: 3 Languages -->
+        <article class="card-gradient rounded-2xl p-7 shadow-sm border border-primary-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal reveal-delay-1">
+          <div class="icon-circle bg-accent-100 mb-5">
+            <span class="text-2xl">🌐</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">3 Ngôn Ngữ Hỗ Trợ</h3>
+          <p class="text-stone-500 text-sm leading-relaxed mb-5">
+            Đọc review bằng ngôn ngữ bạn thoải mái nhất hoặc dùng để luyện ngoại ngữ.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm">
+              <span class="text-2xl">🇻🇳</span>
+              <div>
+                <div class="font-semibold text-sm text-stone-800">Tiếng Việt</div>
+                <div class="text-xs text-stone-400">Ngôn ngữ mặc định</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm">
+              <span class="text-2xl">🇬🇧</span>
+              <div>
+                <div class="font-semibold text-sm text-stone-800">English</div>
+                <div class="text-xs text-stone-400">Global audience</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm">
+              <span class="text-2xl">🇯🇵</span>
+              <div>
+                <div class="font-semibold text-sm text-stone-800">日本語</div>
+                <div class="text-xs text-stone-400">Luyện tiếng Nhật</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Feature 3: Smart Summary -->
+        <article class="card-gradient rounded-2xl p-7 shadow-sm border border-primary-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal reveal-delay-2">
+          <div class="icon-circle bg-green-100 mb-5">
+            <span class="text-2xl">💡</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Tóm Tắt Thông Minh</h3>
+          <p class="text-stone-500 text-sm leading-relaxed mb-5">
+            AI trích xuất những gì quan trọng nhất, giúp bạn không bỏ lỡ bất kỳ điều gì giá trị.
+          </p>
+          <div class="space-y-2.5">
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-primary-600 text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+              <span class="text-sm text-stone-600">Key insights & ý tưởng cốt lõi</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-primary-600 text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+              <span class="text-sm text-stone-600">Quotes hay nhất của tác giả</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-primary-600 text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+              <span class="text-sm text-stone-600">Bài học ứng dụng trong cuộc sống</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-primary-600 text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+              <span class="text-sm text-stone-600">Đánh giá điểm mạnh / điểm yếu</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       HOW IT WORKS
+  ══════════════════════════════ -->
+  <section id="how-it-works" class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <div class="ornament"><span class="text-primary-400 text-sm font-medium tracking-widest uppercase">Cách dùng</span></div>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl md:text-5xl text-stone-900 mb-4">
+          Chỉ <span class="text-primary-600">3 bước</span> đơn giản
+        </h2>
+        <p class="text-stone-500 text-lg">Không cần đăng ký phức tạp. Không cần cài đặt. Dùng công cụ <strong class="text-stone-600">review sách bằng AI</strong> ngay trên trình duyệt.</p>
+      </div>
+
+      <!-- Steps -->
+      <div class="grid md:grid-cols-3 gap-8 relative">
+
+        <!-- Connector lines (desktop only) -->
+        <div class="hidden md:block absolute top-10 left-1/3 w-1/3 h-0.5 bg-gradient-to-r from-primary-200 to-accent-200" style="transform:translateX(-50%);"></div>
+        <div class="hidden md:block absolute top-10 left-2/3 w-1/3 h-0.5 bg-gradient-to-r from-accent-200 to-primary-200" style="transform:translateX(-50%);"></div>
+
+        <!-- Step 1 -->
+        <div class="text-center reveal">
+          <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-full purple-gradient text-white font-serif font-bold text-2xl shadow-lg mb-6">
+            1
+            <div class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-accent-400 flex items-center justify-center text-sm shadow-md">📖</div>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Nhập tên sách</h3>
+          <p class="text-stone-500 text-sm leading-relaxed max-w-xs mx-auto">
+            Gõ tên sách và tác giả, hoặc upload file PDF. BookReview AI hỗ trợ hàng triệu đầu sách từ khắp nơi trên thế giới.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center reveal reveal-delay-1">
+          <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-accent-400 to-accent-600 text-white font-serif font-bold text-2xl shadow-lg mb-6">
+            2
+            <div class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-primary-500 flex items-center justify-center text-sm shadow-md">🎨</div>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Chọn phong cách & ngôn ngữ</h3>
+          <p class="text-stone-500 text-sm leading-relaxed max-w-xs mx-auto">
+            Chọn 1 trong 5 phong cách review và ngôn ngữ bạn muốn nhận kết quả. Tùy chỉnh độ dài và mức độ chi tiết.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center reveal reveal-delay-2">
+          <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 text-white font-serif font-bold text-2xl shadow-lg mb-6">
+            3
+            <div class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-yellow-400 flex items-center justify-center text-sm shadow-md">✨</div>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Nhận review chi tiết</h3>
+          <p class="text-stone-500 text-sm leading-relaxed max-w-xs mx-auto">
+            Trong vòng vài giây, bạn nhận được bản review đầy đủ với insights, quotes, bài học và đánh giá tổng thể.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Demo preview box -->
+      <div class="mt-16 bg-stone-50 rounded-2xl border border-primary-100 p-6 md:p-8 reveal">
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <!-- Input simulation -->
+          <div class="flex-1">
+            <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Input</div>
+            <div class="bg-white rounded-xl border border-stone-200 p-4 shadow-sm">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm font-medium text-stone-600">Tên sách:</span>
+                <span class="text-sm font-serif font-bold text-primary-700">Đắc Nhân Tâm</span>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm font-medium text-stone-600">Tác giả:</span>
+                <span class="text-sm text-stone-800">Dale Carnegie</span>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm font-medium text-stone-600">Phong cách:</span>
+                <span class="chip bg-primary-100 text-primary-700 text-xs">💼 Business</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-medium text-stone-600">Ngôn ngữ:</span>
+                <span class="text-sm">🇻🇳 Tiếng Việt</span>
+              </div>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="hidden md:flex items-center self-center text-primary-300">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+          <!-- Output simulation -->
+          <div class="flex-1">
+            <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Output <span class="text-green-500 ml-1">● Đã tạo xong</span></div>
+            <div class="bg-white rounded-xl border border-stone-200 p-4 shadow-sm">
+              <div class="font-serif font-bold text-stone-900 mb-2 text-sm">"Đắc Nhân Tâm" — Phân Tích Business</div>
+              <p class="text-xs text-stone-500 leading-relaxed mb-3">
+                "Đắc Nhân Tâm" của Dale Carnegie là nền tảng không thể thiếu cho bất kỳ ai muốn thành công trong kinh doanh. Cuốn sách cung cấp bộ công cụ giao tiếp...
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span class="chip bg-amber-50 text-amber-700 text-xs">⭐ 9.2/10</span>
+                <span class="chip bg-green-50 text-green-700 text-xs">💡 6 key insights</span>
+                <span class="chip bg-blue-50 text-blue-700 text-xs">💬 12 quotes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════ -->
+  <section id="testimonials" class="py-20 md:py-28 hero-gradient">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <div class="ornament"><span class="text-primary-400 text-sm font-medium tracking-widest uppercase">Đánh giá</span></div>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl md:text-5xl text-stone-900 mb-4">
+          Độc giả nói gì về<br/>
+          <span class="text-primary-600">BookReview AI</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Testimonial 1 -->
+        <article class="glass-card rounded-2xl p-7 reveal">
+          <div class="stars text-lg mb-4">★★★★★</div>
+          <blockquote class="font-serif text-stone-700 italic leading-relaxed mb-6 text-base">
+            "Tôi đọc trung bình 3 cuốn mỗi tháng và BookReview AI giúp tôi nắm bắt ý tưởng cốt lõi trước khi đọc — tiết kiệm cả chục giờ đồng hồ mỗi năm."
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full purple-gradient flex items-center justify-center text-white font-bold font-serif">N</div>
+            <div>
+              <div class="font-semibold text-sm text-stone-900">Nguyễn Minh Anh</div>
+              <div class="text-xs text-stone-400">Product Manager · Hà Nội</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 2 -->
+        <article class="glass-card rounded-2xl p-7 reveal reveal-delay-1 border-primary-200" style="border-color: rgba(124,58,237,0.2);">
+          <div class="stars text-lg mb-4">★★★★★</div>
+          <blockquote class="font-serif text-stone-700 italic leading-relaxed mb-6 text-base">
+            "Tính năng review theo phong cách Business cực kỳ hữu ích. Tôi dùng nó để thuyết phục team đọc sách, và họ đều bị thuyết phục bởi phần tóm tắt insights."
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-bold font-serif">T</div>
+            <div>
+              <div class="font-semibold text-sm text-stone-900">Trần Thanh Hương</div>
+              <div class="text-xs text-stone-400">Startup Founder · TP. Hồ Chí Minh</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 3 -->
+        <article class="glass-card rounded-2xl p-7 reveal reveal-delay-2">
+          <div class="stars text-lg mb-4">★★★★★</div>
+          <blockquote class="font-serif text-stone-700 italic leading-relaxed mb-6 text-base">
+            "Tôi đang học tiếng Nhật và việc đọc review bằng 日本語 giúp tôi luyện từ vựng trong ngữ cảnh thực tế. Một công cụ quá thông minh và tiện lợi!"
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-white font-bold font-serif">L</div>
+            <div>
+              <div class="font-semibold text-sm text-stone-900">Lê Phương Thảo</div>
+              <div class="text-xs text-stone-400">Sinh viên Đại học · Đà Nẵng</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       PRICING
+  ══════════════════════════════ -->
+  <section id="pricing" class="py-20 md:py-28 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center max-w-xl mx-auto mb-14 reveal">
+        <div class="ornament"><span class="text-primary-400 text-sm font-medium tracking-widest uppercase">Bảng giá</span></div>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl md:text-5xl text-stone-900 mb-4">
+          Bắt đầu miễn phí,<br/>
+          <span class="text-primary-600">nâng cấp khi cần</span>
+        </h2>
+        <p class="text-stone-500">Không cần thẻ tín dụng. Hủy bất cứ lúc nào.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 items-start">
+
+        <!-- Free -->
+        <div class="bg-stone-50 rounded-2xl p-7 border border-stone-200 reveal">
+          <div class="mb-6">
+            <div class="font-serif font-bold text-xl text-stone-900 mb-1">Miễn phí</div>
+            <div class="text-stone-500 text-sm mb-4">Dùng thử, không giới hạn thời gian</div>
+            <div class="font-serif font-black text-4xl text-stone-900">0 ₫</div>
+          </div>
+          <ul class="space-y-3 mb-8 text-sm">
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> 5 review / tháng</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> 3 phong cách cơ bản</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Tiếng Việt & English</li>
+            <li class="flex items-center gap-2 text-stone-400"><span class="text-stone-300">✗</span> Upload PDF</li>
+            <li class="flex items-center gap-2 text-stone-400"><span class="text-stone-300">✗</span> Lưu lịch sử review</li>
+          </ul>
+          <a href="#" class="btn-outline w-full justify-center text-sm block">Bắt đầu miễn phí</a>
+        </div>
+
+        <!-- Pro (popular) -->
+        <div class="bg-white rounded-2xl p-7 pricing-popular shadow-xl reveal reveal-delay-1">
+          <div class="pricing-badge">Phổ biến nhất ✦</div>
+          <div class="mb-6">
+            <div class="font-serif font-bold text-xl text-primary-700 mb-1">Pro</div>
+            <div class="text-stone-500 text-sm mb-4">Cho cá nhân đam mê đọc sách</div>
+            <div class="flex items-end gap-1">
+              <div class="font-serif font-black text-4xl text-stone-900">99k</div>
+              <div class="text-stone-400 text-sm mb-1">₫/tháng</div>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8 text-sm">
+            <li class="flex items-center gap-2 text-stone-700"><span class="text-primary-500">✓</span> <strong>Không giới hạn</strong> review</li>
+            <li class="flex items-center gap-2 text-stone-700"><span class="text-primary-500">✓</span> Tất cả 5 phong cách</li>
+            <li class="flex items-center gap-2 text-stone-700"><span class="text-primary-500">✓</span> Tất cả 3 ngôn ngữ</li>
+            <li class="flex items-center gap-2 text-stone-700"><span class="text-primary-500">✓</span> Upload PDF (tối đa 50MB)</li>
+            <li class="flex items-center gap-2 text-stone-700"><span class="text-primary-500">✓</span> Lưu & chia sẻ review</li>
+            <li class="flex items-center gap-2 text-stone-700"><span class="text-primary-500">✓</span> Export sang PDF / Word</li>
+          </ul>
+          <a href="#" class="btn-primary w-full justify-center text-sm block">Dùng Pro ngay</a>
+        </div>
+
+        <!-- Team -->
+        <div class="bg-stone-50 rounded-2xl p-7 border border-stone-200 reveal reveal-delay-2">
+          <div class="mb-6">
+            <div class="font-serif font-bold text-xl text-stone-900 mb-1">Team</div>
+            <div class="text-stone-500 text-sm mb-4">Cho nhóm & tổ chức</div>
+            <div class="flex items-end gap-1">
+              <div class="font-serif font-black text-4xl text-stone-900">299k</div>
+              <div class="text-stone-400 text-sm mb-1">₫/tháng</div>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8 text-sm">
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Tất cả tính năng Pro</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Tối đa 10 thành viên</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Workspace chung</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Quản lý danh sách đọc</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Analytics team đọc sách</li>
+            <li class="flex items-center gap-2 text-stone-600"><span class="text-primary-500">✓</span> Hỗ trợ ưu tiên 24/7</li>
+          </ul>
+          <a href="#" class="btn-outline w-full justify-center text-sm block">Liên hệ tư vấn</a>
+        </div>
+
+      </div>
+
+      <!-- Money-back -->
+      <p class="text-center text-sm text-stone-400 mt-8 reveal">
+        🔒 Thanh toán an toàn · Hoàn tiền 100% trong 14 ngày nếu không hài lòng
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       FAQ
+  ══════════════════════════════ -->
+  <section id="faq" class="py-20 md:py-28 bg-stone-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center mb-14 reveal">
+        <div class="ornament"><span class="text-primary-400 text-sm font-medium tracking-widest uppercase">FAQ</span></div>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl text-stone-900 mb-4">
+          Câu hỏi thường gặp
+        </h2>
+        <p class="text-stone-500">Không tìm thấy câu trả lời về <em>review sách bằng AI</em>? <a href="mailto:support@bookreview.ai" class="text-primary-600 hover:underline" rel="noopener noreferrer">Liên hệ chúng tôi</a></p>
+      </div>
+
+      <div class="space-y-3 reveal">
+
+        <div class="faq-item bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-primary-200 transition-colors">
+          <details>
+            <summary>Công cụ review sách AI BookReview hoạt động như thế nào?</summary>
+            <div class="faq-answer">
+              BookReview AI sử dụng mô hình ngôn ngữ lớn (LLM) được huấn luyện đặc biệt để phân tích nội dung sách. Khi bạn nhập tên sách, hệ thống tra cứu cơ sở dữ liệu sách đồng thời kết hợp khả năng lý luận của AI để tạo ra bản review phù hợp với phong cách và ngôn ngữ bạn chọn. Toàn bộ quá trình diễn ra trong vài giây.
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-primary-200 transition-colors">
+          <details>
+            <summary>Đánh giá sách tự động bằng AI có chính xác không?</summary>
+            <div class="faq-answer">
+              Chúng tôi kết hợp dữ liệu có kiểm chứng từ cơ sở dữ liệu sách với khả năng diễn giải của AI. Đối với các sách phổ biến, độ chính xác rất cao. Chúng tôi luôn hiển thị cảnh báo rõ ràng khi sách có ít thông tin và khuyến nghị bạn kiểm tra lại với bản gốc. Tính năng upload PDF giúp đảm bảo độ chính xác 100% cho nội dung cụ thể.
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-primary-200 transition-colors">
+          <details>
+            <summary>Tôi có thể upload PDF để AI book reviewer phân tích không?</summary>
+            <div class="faq-answer">
+              Có! Gói Pro và Team hỗ trợ upload file PDF lên đến 50MB. Bạn có thể upload sách, tài liệu nghiên cứu, luận văn hoặc bất kỳ văn bản nào. Dữ liệu của bạn được mã hóa và không được dùng để huấn luyện AI. File sẽ tự động xóa sau 30 ngày nếu bạn không dùng nữa.
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-primary-200 transition-colors">
+          <details>
+            <summary>Làm sao để hủy gói đăng ký?</summary>
+            <div class="faq-answer">
+              Bạn có thể hủy bất cứ lúc nào từ trang Cài đặt tài khoản mà không cần liên hệ support. Sau khi hủy, bạn vẫn sử dụng được đến hết chu kỳ thanh toán hiện tại. Chúng tôi cũng có chính sách hoàn tiền 100% trong 14 ngày đầu nếu bạn không hài lòng — không cần giải thích.
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       CTA BANNER
+  ══════════════════════════════ -->
+  <section class="py-20 purple-gradient overflow-hidden relative">
+    <!-- Decorative circles -->
+    <div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/5"></div>
+    <div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-white/5"></div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center relative">
+      <div class="reveal">
+        <div class="inline-block text-4xl mb-4">📚</div>
+        <h2 class="font-serif font-black text-3xl sm:text-4xl md:text-5xl text-white mb-5 leading-tight">
+          Sẵn sàng đọc sách<br/>thông minh hơn?
+        </h2>
+        <p class="text-primary-200 text-lg mb-8 max-w-xl mx-auto">
+          Tham gia cùng hơn 12,000 độc giả đang dùng <strong class="text-white">AI book reviewer</strong> mỗi ngày. Trên 50,000 cuốn sách đã được đánh giá sách tự động. Bắt đầu miễn phí ngay hôm nay.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#pricing" class="btn-white text-base">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Bắt đầu miễn phí
+          </a>
+          <a href="#features" class="btn-outline border-white/50 text-white hover:bg-white hover:text-primary-700 text-base">
+            Tìm hiểu thêm
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer class="bg-stone-900 text-stone-400 py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div class="sm:col-span-2 md:col-span-1">
+          <a href="#" class="flex items-center gap-2 font-serif font-bold text-xl text-white mb-3">
+            <span class="w-7 h-7 rounded-lg purple-gradient flex items-center justify-center text-white text-xs font-bold">B</span>
+            BookReview<span class="text-accent-400">AI</span>
+          </a>
+          <p class="text-sm leading-relaxed mb-4">
+            Review sách bằng AI — đọc thông minh hơn với sức mạnh của trí tuệ nhân tạo.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" aria-label="Facebook BookReview AI" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-primary-600 flex items-center justify-center text-sm transition-colors">f</a>
+            <a href="#" aria-label="Twitter BookReview AI" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-primary-600 flex items-center justify-center text-sm transition-colors">𝕏</a>
+            <a href="#" aria-label="LinkedIn BookReview AI" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-primary-600 flex items-center justify-center text-sm transition-colors">in</a>
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-4 uppercase tracking-wider">Sản phẩm</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#features" class="hover:text-white transition-colors">Tính năng</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Bảng giá</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Changelog</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-4 uppercase tracking-wider">Công ty</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-white transition-colors">Về chúng tôi</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Tuyển dụng</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-4 uppercase tracking-wider">Pháp lý</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-white transition-colors">Điều khoản dịch vụ</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Chính sách bảo mật</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-stone-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>© 2026 BookReview AI. Bảo lưu mọi quyền.</p>
+        <p>Được tạo với ❤️ tại Việt Nam · Powered by AI</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════
+       JAVASCRIPT (vanilla only)
+  ══════════════════════════════ -->
+  <script>
+    // ─── Navbar scroll effect ───
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // ─── Mobile menu toggle ───
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // ─── Scroll-reveal via IntersectionObserver ───
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // ─── Smooth active nav link highlighting ───
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              const isActive = link.getAttribute('href') === '#' + id;
+              link.classList.toggle('text-primary-600', isActive);
+              link.classList.toggle('font-semibold', isActive);
+            });
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    sections.forEach(s => sectionObserver.observe(s));
+  </script>
+
+</body>
+</html>

@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .env
+node_modules/
+dist/
+.vite/
+.claude/worktrees/
+book-reviewer/
